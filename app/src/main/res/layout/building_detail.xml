@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+
+    app:elevation="8dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="200dp"
+    android:background="@drawable/background_sheet">
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_strip"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/telkom_univ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Gedung Fakultas Terapan"
+        android:textAppearance="@style/telkom_univ" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tentukan_lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Nama lainnya gedung selaru"
+        android:textAppearance="@style/tentukan_lo" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/info_button"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:layout_alignParentTop="true"
+        android:text="Info "
+        android:background="@drawable/ic_rectangle"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+    </android.support.v7.widget.AppCompatButton>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/petunjuk_arah"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="196dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_rectangle"
+        android:text="Petunjuk Arah "
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        android:layout_alignParentRight="true">
+
+    </android.support.v7.widget.AppCompatButton>
+
+
+
+</RelativeLayout>
+
+
+</LinearLayout>

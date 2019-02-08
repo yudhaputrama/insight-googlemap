@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BuildingActivity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_building"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/poltek"
+        tools:ignore="RtlCompat" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/telkom_univ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_building"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="18dp"
+        android:text="Gedung Fakultas Terapan"
+        android:textAppearance="@style/telkom_univ" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tentukan_lo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/telp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Sejarah School Of Applied Science Telkom University"
+        android:textAppearance="@style/tentukan_lo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tentukan_lo"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Fakultas Ilmu Terapan (dh. Politeknik Telkom) dan sejalan
+dengan perkembangannya  serta sesuai dengan
+Keputusan Menteri Pendidikan dan Kebudayaan"
+        android:textAppearance="@style/tentukan_lo" />
+
+    <LinearLayout
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telkom_univ"
+        android:layout_marginLeft="24dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/building_icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_building" />
+
+        <TextView
+            android:id="@+id/building_names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Gedung Fakultas Ilmu Terapan"
+            android:textColor="#3F3D56"
+            app:fontFamily="@font/roboto" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/telp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/web"
+        android:layout_marginLeft="24dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/building_iconst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_building" />
+
+        <TextView
+            android:id="@+id/building_namest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Gedung Fakultas Ilmu Terapan"
+            android:textColor="#3F3D56"
+            app:fontFamily="@font/roboto" />
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/rute_button"
+        android:layout_below="@id/desc"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_rectangle"
+        android:text="Petunjuk Arah "
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+    </android.support.v7.widget.AppCompatButton>
+</RelativeLayout>
+</ScrollView>

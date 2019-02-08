@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:id="@+id/item_destination">
+    <ImageView
+        android:id="@+id/building_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_building"
+        android:layout_marginRight="16dp"/>
+
+    <TextView
+        android:id="@+id/building_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gedung Fakultas Ilmu Terapan"
+        android:textColor="#3F3D56"
+        android:layout_gravity="center_vertical"
+        app:fontFamily="@font/roboto" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Googlemap</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="telkom_univ">Telkom University</string>
+    <string name="tentukan_lo">Tentukan lokasi tujuan !</string>
+    <string name="gedung_faku">Gedung Fakultas Ilmu Terapan</string>
+
+
+</resources>

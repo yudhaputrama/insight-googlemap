@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+    <ImageButton
+        android:id="@+id/button_direction"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_direction"
+        android:background="@drawable/background_direction_button"
+        android:layout_gravity="bottom|end"
+        android:padding="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"/>
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ellipse"
+        android:scaleType="centerInside"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:padding="8dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_ellipse"
+        android:src="@drawable/ic_location"
+        app:elevation="4dp"
+        />
+    <include
+        android:id="@+id/map_sheet"
+        layout="@layout/fragment_bottom_sheet" />
+    <include
+        android:id="@+id/building_sheet"
+        layout="@layout/fragment_building_list" />
+    <!--<include-->
+        <!--android:id="@+id/route_sheet"-->
+        <!--layout="@layout/route_detail" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/save_keywords"-->
+        <!--android:layout_marginTop="340dp"-->
+        <!--android:background="#FF2E7D32"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:text="test"-->
+        <!--android:typeface="normal"/>-->
+</android.support.design.widget.CoordinatorLayout>
